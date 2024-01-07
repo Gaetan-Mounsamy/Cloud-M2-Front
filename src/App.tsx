@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Famille from './components/Famille';
+import ButtonAppBar from './components/MuiNavbar';
+import Utilisateur from './components/Utilisateur';
+import Vehicule from './components/Vehicule';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonAppBar/>
+      <Vehicule/>
+      <Utilisateur/>
+      <Famille/>
     </div>
   );
 }
