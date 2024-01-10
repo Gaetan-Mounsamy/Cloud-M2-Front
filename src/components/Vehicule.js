@@ -72,9 +72,9 @@ export default function Vehicule() {
 
         <h1 style={{color:'#1976D2'}}>Vehicules</h1>
 
-        <Paper elevation={3} square="false" style={paperStyle}>
+        <Paper elevation={3} square={false} style={paperStyle}>
           {vehicules.map(vehicule=>(
-            <Paper elevation={6} square="false" style={{margin:"10px", padding:"5px", textAlign:"left"}} key={vehicule.id}>
+            <Paper elevation={6} square={false} style={{margin:"10px", padding:"5px", textAlign:"left"}} key={vehicule.id}>
               Marque: {vehicule.marque}<br/>
               Type: {vehicule.type}<br/>
               Modele: {vehicule.modele}<br/>

@@ -64,9 +64,9 @@ export default function Utilisateur() {
 
         <h1 style={{color:'#1976D2'}}>Utilisateurs</h1>
 
-        <Paper elevation={3} square="false" style={paperStyle}>
+        <Paper elevation={3} square={false} style={paperStyle}>
           {utilisateurs.map(utilisateur=>(
-            <Paper elevation={6} square="false" style={{margin:"10px", padding:"5px", textAlign:"left"}} key={utilisateur.id}>
+            <Paper elevation={6} square={false} style={{margin:"10px", padding:"5px", textAlign:"left"}} key={utilisateur.id}>
               Prenom: {utilisateur.prenom}<br/>
               nbr_Vehicule: {utilisateur.nbr_vehicule}<br/>
               id_Vehicule: {utilisateur.id_vehicule}<br/>

@@ -64,9 +64,9 @@ export default function Famille() {
 
         <h1 style={{color:'#1976D2'}}>Familles</h1>
 
-        <Paper elevation={3} square="false" style={paperStyle}>
+        <Paper elevation={3} square={false} style={paperStyle}>
           {familles.map(famille=>(
-            <Paper elevation={6} square="false" style={{margin:"10px", padding:"5px", textAlign:"left"}} key={famille.id}>
+            <Paper elevation={6} square={false} style={{margin:"10px", padding:"5px", textAlign:"left"}} key={famille.id}>
               nom_Famille: {famille.nom_famille}<br/>
               taille_Famille: {famille.taille_famille}<br/>
               nbr_Vehicule: {famille.nbr_vehicule}<br/>
